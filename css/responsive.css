@@ -1,0 +1,504 @@
+/* ============================================
+   RESPONSIVE.CSS
+   Media queries for all screen sizes
+   Makes every page fully responsive
+   ============================================ */
+
+/* ============================================
+   TABLET LANDSCAPE (1024px - 1200px)
+   ============================================ */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .offerings-grid {
+    gap: 1.5rem;
+  }
+}
+
+/* ============================================
+   TABLET PORTRAIT (768px - 1023px)
+   ============================================ */
+@media (max-width: 1023px) {
+  /* Container */
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  /* Header */
+  header {
+    padding: 0.75rem 1rem;
+  }
+  
+  #logo {
+    height: 45px;
+  }
+  
+  .brand-text {
+    font-size: 1.1rem;
+  }
+  
+  /* Hero Slideshow */
+  .service-hero {
+    height: 50vh;
+    min-height: 400px;
+  }
+  
+  .slide-caption h2 {
+    font-size: 1.8rem;
+  }
+  
+  .slide-caption p {
+    font-size: 1rem;
+  }
+  
+  /* Page Header */
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Offerings Grid */
+  .offerings-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .offering-card {
+    padding: 1.5rem;
+  }
+  
+  .offering-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .offering-icon i {
+    font-size: 1.5rem;
+  }
+  
+  .offering-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Why Us Grid */
+  .why-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  /* Contact Page */
+  .contact-grid {
+    gap: 2rem;
+  }
+  
+  .contact-info,
+  .contact-form-wrapper {
+    padding: 1.5rem;
+  }
+}
+
+/* ============================================
+   MOBILE LANDSCAPE (641px - 767px)
+   ============================================ */
+@media (max-width: 767px) {
+  /* Container */
+  .container {
+    padding: 0 1rem;
+  }
+  
+  /* Hero Slideshow */
+  .service-hero {
+    height: 45vh;
+    min-height: 350px;
+  }
+  
+  .slide-caption {
+    bottom: 15%;
+    left: 5%;
+    right: 5%;
+  }
+  
+  .slide-caption h2 {
+    font-size: 1.4rem;
+  }
+  
+  .slide-caption p {
+    font-size: 0.85rem;
+  }
+  
+  /* Navigation Buttons */
+  .slide-nav {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Dots */
+  .slide-dots {
+    bottom: 10px;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .dot.active {
+    width: 20px;
+  }
+  
+  /* Page Header */
+  .page-header {
+    padding: 2rem 0 1.5rem;
+  }
+  
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .page-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  /* Offerings Grid - Switch to single column on mobile */
+  .offerings-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .offering-card {
+    padding: 1.25rem;
+  }
+  
+  /* Why Us Grid */
+  .why-us-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .why-us-item {
+    text-align: center;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    padding: 2.5rem 1rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .cta-section p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .cta-buttons .btn-primary,
+  .cta-buttons .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  /* Gallery Grid */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 2rem 1rem;
+  }
+  
+  footer h3 {
+    font-size: 1.3rem;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.8rem;
+    margin: 0 0.5rem;
+  }
+}
+
+/* ============================================
+   SMALL MOBILE (481px - 640px)
+   ============================================ */
+@media (max-width: 640px) {
+  /* Hero Slideshow */
+  .service-hero {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  /* Buttons */
+  .btn-solid,
+  .btn-outline-light {
+    padding: 0.35rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  /* Offering Cards */
+  .offering-card p {
+    font-size: 0.9rem;
+  }
+  
+  .offering-list li {
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================================
+   EXTRA SMALL MOBILE (up to 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  /* Logo */
+  #logo {
+    height: 40px;
+  }
+  
+  .brand-text {
+    display: none;
+  }
+  
+  /* Header Actions */
+  .header-actions {
+    gap: 0.5rem;
+  }
+  
+  .btn-solid,
+  .btn-outline-light {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+  }
+  
+  #themeToggle {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  /* Hero Slideshow */
+  .service-hero {
+    height: 35vh;
+    min-height: 250px;
+  }
+  
+  .slide-caption h2 {
+    font-size: 1.1rem;
+  }
+  
+  .slide-caption p {
+    font-size: 0.7rem;
+  }
+  
+  /* Page Header */
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  /* Offering Cards */
+  .offering-card {
+    padding: 1rem;
+    border-radius: 16px;
+  }
+  
+  .offering-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .offering-icon i {
+    font-size: 1.25rem;
+  }
+  
+  .offering-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Footer */
+  footer .copyright {
+    font-size: 0.7rem;
+  }
+  
+  /* ===== CONTACT PAGE MOBILE ===== */
+  .contact-grid {
+    gap: 1.5rem;
+  }
+  
+  .contact-info,
+  .contact-form-wrapper {
+    padding: 1.25rem;
+    border-radius: 20px;
+  }
+  
+  .contact-info h2,
+  .contact-form-wrapper h2 {
+    font-size: 1.4rem;
+  }
+  
+  .contact-item {
+    padding: 0.75rem 0;
+  }
+  
+  .contact-item i {
+    font-size: 1.2rem;
+    width: 30px;
+  }
+  
+  .contact-item h4 {
+    font-size: 0.9rem;
+  }
+  
+  .contact-item a,
+  .contact-item p {
+    font-size: 0.85rem;
+  }
+  
+  .business-hours {
+    padding: 1rem;
+  }
+  
+  .business-hours h3 {
+    font-size: 1.1rem;
+  }
+  
+  .business-hours p {
+    font-size: 0.85rem;
+  }
+  
+  /* Form Styles */
+  .form-group label {
+    font-size: 0.85rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+  
+  .submit-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   LARGE DESKTOP (1440px and up)
+   ============================================ */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+  
+  .service-hero {
+    height: 65vh;
+  }
+  
+  .offerings-grid {
+    gap: 2.5rem;
+  }
+  
+  .offering-card {
+    padding: 2.5rem;
+  }
+}
+
+/* ============================================
+   PRINT STYLES (for printing quotes/estimates)
+   ============================================ */
+@media print {
+  header,
+  footer,
+  .slide-nav,
+  .slide-dots,
+  .cta-section,
+  .mobile-toggle,
+  .header-actions,
+  .social-icons,
+  .btn-primary,
+  .btn-secondary {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  .offering-card,
+  .contact-info,
+  .contact-form-wrapper {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES FOR RESPONSIVE BEHAVIOR
+   ============================================ */
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+  
+  .text-center-mobile {
+    text-align: center !important;
+  }
+  
+  .full-width-mobile {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
