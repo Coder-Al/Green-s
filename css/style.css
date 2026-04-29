@@ -73,6 +73,11 @@ header {
   display: flex;
   align-items: center;
   gap: var(--spacing-lg);
+  position: static;
+}
+
+.nav-menu.active {
+  right: 0;
 }
 
 .nav-links {
